@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Connectez-vous
+{% endblock %}
+
+{% block body %}
+  <h1>Création d'un compte utilisateur</h1>
+
+  <form action="/signup/confirm" method="post">
+    <div>
+      <label for="username">Username :</label>
+      <input type="username" name="username" id="username" />
+      <label for="password">Password :</label>
+      <input type="password" name="password" id="password" />
+    </div>
+
+    <div>
+      <input type="submit" value="signup" />
+    </div>
+  </form>
+{% endblock %}
